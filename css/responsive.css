@@ -1,0 +1,306 @@
+/* extra small starts */
+@media (max-width: 575.98px){
+     .navbar-nav {
+        text-align: center;
+    }
+        
+    .navbar-light .navbar-toggler {
+        color:#fff !important;
+        border-color: #fcb100 !important;
+    }
+    .btn{
+        font-size: 20px !important;
+    }
+    #banner .picter1 img {
+        right: 0PX;
+        width: 340px;
+    }
+    #banner .banner-text{
+        margin-top: 522px;
+        text-align: center;
+    }
+    #banner .banner-text h1 {
+        font-size: 220px;
+        margin-top: 0px;
+    }
+    #banner .banner-text a {
+        margin-left: 0px;
+    }
+    #about {
+        transform: translateY(-15%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+    }
+    #about .box-iteam1 {
+        margin-top: 20px;
+    }
+    #games .game-iteam {
+        margin-top: 40px;
+    }
+    #games .game-iteam img {
+        width: 100% !important;
+    }
+    #spin {
+        padding-top: 0px;
+    }
+    #spin .spin-text{
+       text-align: center;
+    }
+    #spin .picter-spin {
+        margin-top: 50px;
+    }
+    #tournaments .tournament-box1 .heading h2 {
+        font-size: 30px;
+    }
+    #tournaments {
+        padding-top: 50px;
+    }
+    #tournaments #countdown .box1 #headline{
+        font-size: 12px;
+    }
+    #tournaments .tournament-box2 .heading h2 {
+        font-size: 34px;
+        padding-bottom: 30px;
+       padding-top: 20px;
+    }
+    #payment {
+     text-align: center;
+    }
+    #countdown .box1 h5, h5 {
+        font-size: 12px;
+    }
+    #footer {
+       text-align: center;
+    }
+    #footer .links h4 {
+       padding-top: 20px;
+    }
+}
+
+/* extra small ends*/
+/*  small device starts */
+@media (min-width: 576px) and (max-width:767.98px){
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-light .navbar-toggler {
+        color:#fff !important;
+        border-color: #fcb100 !important;
+    }
+    .navbar #navbarSupportedContent .login-form {
+        margin-left: 136px;
+    }
+    .our-modal {
+        margin-left: 119px;
+    }
+    .btn {
+        font-size: 20px !important;
+    }
+    /* #banner{
+        overflow: hidden !important;
+    } */
+    #banner .picter1{
+        text-align: center;
+    }
+    #banner .picter1 img {
+       width: 75% !important;
+        right: 70PX;
+    }
+    #banner .banner-text{
+        margin-top: 690px;
+        text-align: center;
+    }
+    #banner .banner-text h1 {
+       font-size: 300px;
+    }
+    #banner .banner-text a {
+        margin-left: 0px;
+    }
+    #about {
+        transform: translateY(-15%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+    }
+    #about .box-iteam1 {
+        margin-top: 20px;
+    }
+    /* #game{
+        overflow: hidden;
+    } */
+    #games .game-iteam {
+        margin-top: 40px;
+    }
+    #games .game-iteam img{
+        width: 100% !important;
+    }
+    #spin {
+        padding-top: 0px;
+    }
+    #spin .spin-text{
+       text-align: center;
+    }
+    #spin .picter-spin {
+        margin-top: 50px;
+    }
+    #tournaments .tournament-box1 .heading h2 {
+        font-size: 30px;
+    }
+    #tournaments {
+        padding-top: 50px;
+    }
+    #tournaments #countdown .box1 #headline{
+        font-size: 12px;
+    }
+    #tournaments .tournament-box2 .heading h2 {
+        font-size: 34px;
+        padding-bottom: 30px;
+       padding-top: 20px;
+    }
+    #payment {
+     text-align: center;
+    }
+    #countdown .box1 h5, h5 {
+        font-size: 12px;
+    }
+    #footer {
+       text-align: center;
+    }
+    #footer .links h4 {
+       padding-top: 20px;
+    }
+
+}
+/*  small device ends*/
+
+
+/* medium device starts */
+@media (min-width: 768px) and (max-width:991.98px){
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-light .navbar-toggler {
+        color:#fff !important;
+        border-color: #fcb100 !important;
+        text-align: center;
+    }
+    .navbar #navbarSupportedContent .login-form {
+        margin-left: 104px;
+    }
+    .our-modal {
+        margin-left: 119px;
+    }
+    .btn {
+        font-size: 20px !important;
+    }
+    #banner .picter1 img {
+        left: 0PX;
+    }
+    #banner .picter1 img {
+        width: 110% !important;
+    }
+    #banner .banner-text {
+        margin-top: 164px;
+        margin-left: 40PX;
+    }
+    #banner .banner-text h5 {
+        padding-bottom: 20px;
+    }
+    #banner .banner-text h1 {
+        font-size: 200px;
+    }
+    #banner .banner-text a {
+        margin-left: 83px;
+    }
+    #spin {
+        padding-top: 0px;
+    }
+    #spin .spin-text{
+       text-align: center;
+    }
+    #spin .picter-spin {
+        margin-top: 50px;
+    }
+    #tournaments .tournament-box1 .heading h2 {
+        font-size: 30px;
+    }
+    #tournaments {
+        padding-top: 50px;
+    }
+    #tournaments #countdown .box1 #headline{
+        font-size: 12px;
+    }
+    #tournaments .tournament-box2 .heading h2 {
+        font-size: 34px;
+        padding-bottom: 30px;
+       padding-top: 20px;
+    }
+    #payment {
+     text-align: center;
+    }
+    #countdown .box1 h5, h5 {
+        font-size: 12px;
+    }
+    #footer {
+       text-align: center;
+    }
+    #footer .links h4 {
+       padding-top: 20px;
+    }
+}
+
+/*  medium device ends */
+/* large device starts */
+@media(min-width:992px) and (max-width:1199.98px){
+.navbar .nav-item .nav-link {
+        padding: 10px 26px !important;
+    }
+.navbar #navbarSupportedContent button {
+    margin-left: 22px;
+    padding: 0px 0px;
+    }
+#banner .picter1 img {
+	top: 183PX;
+    width: 103% !important;
+    right: -21px;
+}
+#banner .banner-text h1 {
+	font-size: 294px;
+}
+
+#spin {
+    padding-top: 0px;
+}
+#spin .spin-text{
+   text-align: center;
+}
+#spin .picter-spin {
+    margin-top: 50px;
+}
+#tournaments .tournament-box1 .heading h2 {
+    font-size: 30px;
+}
+#tournaments {
+    padding-top: 50px;
+}
+#tournaments #countdown .box1 #headline{
+    font-size: 12px;
+}
+#tournaments .tournament-box2 .heading h2 {
+    font-size: 34px;
+    padding-bottom: 30px;
+   padding-top: 20px;
+}
+#payment {
+ text-align: center;
+}
+#countdown .box1 h5, h5 {
+    font-size: 12px;
+}
+#footer {
+   text-align: center;
+}
+#footer .links h4 {
+   padding-top: 20px;
+}
+}
+
+
+/* large device ends */

@@ -1,0 +1,1032 @@
+/*==== table of contant====*//*
+1.common css 
+2.preloader css
+3.navbar css
+4.fixed navber starts
+5.modal css
+6.login from css
+7.banner css
+8.games css
+9.spin css
+10.plan css
+11.tournaments css
+12.payment css
+13.footer css
+14.back-to-top css
+
+*/
+
+/*common css starts*/
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.clr{
+    clear: both;
+}
+
+:root{
+    --hf:'Nunito', sans-serif;
+    --subf: 'Anton', sans-serif;
+}
+/*common css ends*/
+/*preloader starts*/
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.preloader .loader span{
+    width: 40px;
+    height: 40px;
+    background: coral;
+    display: inline-block;
+    border-radius: 50%;
+    animation: circle linear infinite 1.3s alternate;
+}
+@keyframes circle{
+    50%,60%{
+    /* width: 20px; */
+    width: 30px;
+    }
+    75%,95%{
+      /* width: 30px; */
+      width:  40px;
+    }
+}
+.preloader .loader span:nth-child(1){
+    background: cornflowerblue;
+    animation-delay:.5s;
+}
+.preloader .loader span:nth-child(2){
+    background:darksalmon;
+    animation-delay:.9s;
+}
+.preloader .loader span:nth-child(3){
+    background:darkseagreen;
+    animation-delay:1s;
+}
+.preloader .loader span:nth-child(4){
+    background:indianred;
+    animation-delay:1.2s;
+}
+.preloader .loader span:nth-child(5){
+    background:khaki;
+    animation-delay:1.4s;
+}
+/*preloader ends*/
+/*navbar starts*/
+.navbar{
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 5;
+    width: 100%;
+}
+.navbar .navbar-brand{
+    padding-top: 0;
+    padding-bottom:0 ;
+}
+.navbar .navbar-brand img{
+    width: 100%;
+    height: 97px;
+} 
+.navbar .nav-item .nav-link{
+        color: #944bff;
+        padding: 10px 40px;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: var(--hf);
+        text-transform: capitalize;
+        position: relative;
+        transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+   
+} 
+.navbar .nav-item .nav-link:hover{
+    color: #c72ab0;
+}
+.navbar .nav-item .active{
+    color: #c72ab0 !important;
+     background: #fcb100;
+}
+.navbar .navbar-nav .nav-item .nav-link::before{
+    content: '';
+   position: absolute;
+    content: '';
+    background: url(../images/sp1.png)no-repeat;
+    top: -30px;
+    left: 50%;
+    width: 20px;
+    height: 0px;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: all linear .3s;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::before{
+    height: 100%;
+   
+}
+.navbar .navbar-nav .nav-item .active::before{
+    height: 100%;
+}
+
+.navbar #navbarSupportedContent .login-form{
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+    box-shadow: 1px 2px 1px 3px #5f14ce ;
+    color: #fff;
+    margin-left: 20px;
+    padding:10px  15px;
+    border-radius: 5px;
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+.navbar #navbarSupportedContent .login-form:hover{
+    background: linear-gradient(#f131ce 0%,#b40991 100%);
+    box-shadow: 1px 2px 1px 3px #b40991;  
+}
+/*navbar bends*/
+/* fixed-nav */
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+   background: #fcb100;
+   width: 100%;
+   z-index: 99999;
+   padding-bottom: 10px;
+   height: 70px;
+   animation: fixed-nav 1s linear;
+}
+
+@keyframes fixed-nav{
+    0% {
+        top: -55px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+/* fixed-nav */
+/*modal css starts*/
+.modal{
+    background:linear-gradient(27deg, #9647f6 50%,#5f14ce 50%);
+ }
+ .modal-body{
+       background: linear-gradient(27deg,#b40991 50%, #f131ce 50%);
+     box-shadow: 1px 2px 1px 3px #b40991;  
+ }
+ .our-modal{
+   padding: 10px;
+    width: 100px;
+     height: 60px;
+     background:linear-gradient(27deg, #9647f6 50%,#5f14ce 50%);
+      font-family: var(--subf);
+     font-weight: 400;
+     font-size: 24px;
+     text-transform: capitalize;
+     color: #fff;
+    transition: all linear .3s;
+     -moz-transition: all linear .3s;
+     -ms-transition: all linear .3s;
+     -o-transition: all linear .3s;
+     -webkit-transition: all linear .3s;
+ }
+ .our-modal:hover{
+    background: linear-gradient(27deg,#b40991 50%, #f131ce 50%);
+     box-shadow: 1px 2px 1px 3px #b40991;
+     border: none;  
+ }
+ /*modal css ends*/
+ /*login from css starts*/
+.main-div{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(27deg, #9647f6 50%,#5f14ce 50%);
+}
+.main-div .box{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(27deg,#b40991 50%, #f131ce 50%);
+    box-shadow: 1px 2px 1px 3px #b40991;  
+    position: absolute;
+     top: 50%;
+    left:50% ;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.main-div .box #img-box{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  top: -5px;
+  left: 50px;
+  transform: translate(-50%,-50%);
+ 
+}
+.main-div .box h2{
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    text-shadow: -2px 2px 1px #0a84c6;
+    text-transform: uppercase;
+}
+.inputbox{
+    width:50%;
+    height: 30px;
+    display: block;
+    margin: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+::placeholder{
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+}
+.main-div .box h3{
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: -2px 2px 1px #0a84c6;
+    text-transform: uppercase;
+    background: #9647f6;
+    border-radius: 45%;
+}
+/*login from css ends*/
+/*banner starts*/
+#banner{
+    background: #150035;
+    padding-bottom: 150px;
+}
+#banner .picter1{
+    position: relative;
+}
+#banner .picter1 img {
+	position: absolute;
+	top: 155PX;
+	right: -39PX;
+	width: 130%;
+}
+#banner .banner-text{
+    margin-top: 215px; 
+    padding-bottom: 30px;
+ }
+ #banner .banner-text h5{
+     font-family: var(--hf);
+     font-weight: 400;
+     font-size: 20px;
+     color: #fff;
+    margin-top: -9px;
+ }
+ #banner .banner-text h1{
+     font-family: var(--subf);
+     font-weight: 400;
+     font-size: 331px;
+     color: #fcb100;
+    background: -webkit-linear-gradient(top, #fdb125 45%, #e07e1e 48%, #fcb100 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 35px #4d0148);
+ }
+ #banner .banner-text p{
+     font-family: var(--hf);
+     font-weight: 400;
+     font-size:16px;
+     color: #fff;
+    line-height:24px;
+    /* padding-top: -45px; */
+    padding-bottom: 30px;
+    text-align: center;
+ }
+ #banner .banner-text a{
+     font-family: var(--subf);
+     font-weight: 400;
+     font-size:24px;
+     color: #fff;
+     background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+     box-shadow: 1px 2px 1px 3px #5f14ce ; 
+    margin-left: 197px;
+    padding: 5px 8px;
+    text-align: center;
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+   
+ }
+ #banner .banner-text a:hover{
+     background: linear-gradient(#f131ce 0%,#b40991 100%);
+     box-shadow: 1px 2px 1px 3px #b40991;  
+ }
+/*banner ends*/
+/*games starts*/
+#games{
+    background: #0b001b;
+   /* padding-top: 140px; */
+   padding-bottom: 100px;
+}
+#about{
+    /*     background: #0b001b;*/
+        transform: translateY(-50%);
+        clip-path: polygon(1% 8%, 100% 0, 100% 98%, 0 93%);
+     }
+     #about .box-iteam1 {
+        text-align: center;
+        background: linear-gradient(to right, #9e4efc 0%, #570dc8 100%);
+        box-shadow: inset 10px 0px 50px 0px rgb(31 7 67);
+        filter: drop-shadow(5px 2px 7px #4444dd);
+        padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+    #about .box-iteam1 h5{
+        font-family: var(--subf);
+        font-weight: 400;
+        font-size: 50px;
+        color: #fcb100;
+        text-transform: capitalize;
+       padding-top: 30px;
+    }
+    #about .box-iteam1 h4{
+        font-family: var(--subf);
+        font-weight: 400;
+        font-size: 32px;
+        color: #fff;
+        padding-top: 10px; 
+    }
+    #about .box-iteam1 p{
+        font-family: var(--hf);
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        line-height: 16px;
+       padding-top: 30px;
+    }
+#games .heading h2{
+    text-align: center;
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 48px;
+    color: #fcb100;
+}
+#games .game-iteam{
+    margin-top: 56px;
+    position: relative;
+}
+#games .game-iteam img{
+    /* width: 100%; */
+}
+#games .game-iteam .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#35183f85;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+#games .game-iteam:hover .overlay{
+    opacity: 1;
+}
+#games .game-iteam .overlay h6{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+#games .game-iteam .overlay a{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 5px 15px;
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+    box-shadow: 1px 2px 1px 3px #5f14ce ; 
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+#games .game-iteam .overlay a:hover{
+    background: linear-gradient(#f131ce 0%,#b40991 100%); 
+    box-shadow: 1px 2px 1px 3px #b40991; 
+}
+/*games ends*/
+
+/*spin starts*/
+#spin{
+    background: #150035;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#spin .picter-spin{
+    margin-right: 70px;
+}
+#spin .picter-spin img{
+    width: 100%;
+}
+#spin .spin-text h4{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 48px;
+    color: #fcb100;
+    padding-bottom: 15px;
+    padding-top: 80px;
+}
+#spin .spin-text p{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 30px;
+    line-height: 24px;
+}
+#spin .spin-text p:last-of-type{
+    margin-bottom: 60px;
+}
+#spin .spin-text a{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffff;
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+    box-shadow: 1px 2px 1px 3px #5f14ce ; 
+    padding: 5px 10px;
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+#spin .spin-text a:hover{
+    background: linear-gradient(#f131ce 0%,#b40991 100%); 
+    box-shadow: 1px 2px 1px 3px #b40991; 
+}
+/*spin ends*/
+/*plan starts*/
+#plan{
+    background: #0b001b;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#plan .heading h2{
+    text-align: center;
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 48px;
+    color: #fcb100;
+}
+#plan .plan-iteam{
+    margin: 0 10px;
+     margin-top: 60px;
+      transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+#plan .plan-iteam:hover{
+   transform: scale(1.1)
+}
+#plan .plan-iteam .plan-heading{
+    background: linear-gradient(#f131ce 0%,#b40991 100%);  
+    box-shadow: 1px 2px 1px 3px #0b001b;
+    border-radius: 5px;
+   opacity: 0;
+/*    height: 100%;*/
+    clip-path: inset(0 0 6% 0);
+}
+#plan .plan-iteam:hover .plan-heading{
+   opacity: 1;
+   
+}
+#plan .plan-iteam .plan-heading h6{
+    text-align: center;
+    font-family: var(--hf);
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 0;
+}
+#plan .plan-iteam{
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+    text-align: center;
+}
+#plan .plan-iteam .plan-text h4{
+    text-align: center;
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+#plan .plan-iteam .plan-text h5{
+    text-align: center;
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+#plan .plan-iteam .plan-text h6{
+    text-align: center;
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+#plan .plan-iteam .plan-text h6::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #0b001b;
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+}
+#plan .plan-iteam .plan-text ul{
+    padding-top: 30px;
+}
+#plan .plan-iteam .plan-text ul li{
+    text-align: center;
+    font-family: var(--hf);
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    padding-bottom:15px ;
+}
+#plan .plan-iteam .plan-text a{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffff;
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+    padding-right:  15px;
+    padding-left:  15px;
+    padding-top: 5px ;
+    padding-bottom: 10px ;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px 3px #5f14ce ; 
+    transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+#plan .plan-iteam:hover .plan-text a{
+    background: linear-gradient(#f131ce 0%,#b40991 100%);
+    box-shadow: 1px 2px 1px 3px #b40991; 
+}
+/*plan ends*/
+/*tournaments starts*/
+#tournaments{
+    background: #150035;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#tournaments .tournament-box1 .heading h2{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 40px;
+    color:#fcb100;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+}
+#tournaments .tournament-box1 .heading h2::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #0b001b;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+#tournaments .tournament-box2{
+    position: relative;
+}
+#tournaments .tournament-box2 .box-iteam img{
+        position: absolute;
+        left: 0px;
+        top:70px;
+        animation: lineshine2 10s infinite;
+        animation-direction: alternate;
+        z-index: 99;
+}
+
+@keyframes lineshine2{
+    from {
+        left: -10%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+  
+  #tournaments .tournament-box2 .heading h2{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 40px;
+    color:#fcb100;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+}
+#tournaments .tournament-box2 .heading h2::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #0b001b;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+#tournaments .tournament-box1{
+    position: relative;
+}
+#tournaments .tournament-box1 .box-iteam2 img{
+        position: absolute;
+        left: 0px;
+        top: 70px;
+        animation: lineshine3 10s infinite;
+        animation-direction: alternate;
+        z-index: 99;
+}
+
+@keyframes lineshine3{
+    from {
+        left: -10%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+.card {
+    background: #150035;
+    border: 1px solid  #fcb100 !important;
+}
+.btn-link {
+	font-weight: 400;
+	color: #fff;
+	background-color: transparent;
+}
+button:focus {
+	outline: none;
+	outline:none
+}
+.card-header{
+    position: relative;
+}
+.btn i{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btn-link:hover {
+	color: #fff;
+	text-decoration:none !important;
+    background: #150035;
+	border-color: transparent;
+}
+body {
+	color: #fff;
+}
+
+#tournaments .tournament-box2 .heading h2{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 40px;
+    color:#fcb100;
+    padding-bottom: 30px;
+    position: relative;
+    text-transform: capitalize;
+}
+#tournaments .tournament-box2 .heading h2::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #0b001b;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+#tournaments .tournament-box1{
+    position: relative;
+}
+#tournaments .tournament-box1 .box-iteam2 img{
+        position: absolute;
+        left: 0px;
+        top: 70px;
+        animation: lineshine3 10s infinite;
+        animation-direction: alternate;
+        z-index: 99;
+}
+
+@keyframes lineshine3{
+    from {
+        left: -10%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+#tournaments .box1{
+    display: flex;
+}
+#tournaments #countdown{
+    display: flex;
+}
+#countdown li {
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 14px;
+    color:#fcb100;
+    text-transform: capitalize;
+    float: left;
+    border: 1px solid #fcb100;
+    height: 60px;
+    width: 60px;
+    margin-left: 18px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  li span {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+  }
+  #tournaments .scorllbar ul{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #000000;
+
+  }
+  #tournaments .scorllbar ul:last-child{
+   border: none;
+  }
+  #tournaments .scorllbar{
+    height: 300px;
+    color: #fff;
+     overflow: hidden; 
+    padding-right: 60px;
+ } 
+/*tournaments ends*/
+/*payment starts*/
+#payment{
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+    box-shadow: 1px 1px 8px 3px #5f14ce ; 
+    padding-bottom: 30px;
+    padding-top: 30px;
+    /* position: relative; */
+}
+#payment .subscrib h2{
+    padding-bottom: 15px;
+    /* position: relative; */
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    text-transform: capitalize;
+}
+#payment .subscrib .input-group .form-control{
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%) !important;
+    border: 1px solid #050505;
+    color: #3a0090;
+    text-align: center;
+   
+}
+#payment .subscrib .input-group .input-group-text{
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%) !important;
+    border: 1px solid #050505;
+    color: #3a0090;
+    text-align: center;
+   
+}
+#payment .payment-method h2{
+    padding-bottom: 20px;
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+    text-transform: capitalize;
+}
+/*payment ends*/
+/*footer starts*/
+#footer{
+    background: #150035;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: #fff;
+    position: relative;
+}
+#footer::after{
+    content: '';
+     width: 100%;
+    height: 1px;
+    background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+    position: absolute;
+     bottom: 95px;
+     left: 0pX;
+}
+#footer .about-jackpot h4{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 32px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+#footer .about-jackpot p{
+    font-family: var(--hf);
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 25px;
+    text-align: justify;
+}
+#footer .about-jackpot ul{
+    margin: 0;
+    padding: 0;
+}
+#footer .about-jackpot ul li{
+  width: 40px;
+  height: 40px;
+  background:linear-gradient(#9647f6 0%,#5f14ce 100%);
+  box-shadow: 1px 1px 8px 3px #5f14ce ;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+#footer .about-jackpot ul li a{
+    color: #fff;
+}
+#footer .about-jackpot ul li:hover{
+    background: linear-gradient(#f131ce 0%,#b40991 100%);
+    box-shadow: 1px 2px 1px 3px #b40991; 
+}
+#footer .links h4{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+#footer .links ul{
+    margin: 0;
+    padding: 0;
+}
+#footer .links ul li{
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+#footer .info h4{
+    font-family: var(--subf);
+    font-weight: 400;
+    font-size: 32px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+#footer .info .info-images img{
+    margin-bottom: 30px;
+}
+#footer .info .para h6{
+    margin-bottom: 80px;
+    font-family: var(--hf);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+#footer .info .para p{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+#footer .copy-right {
+	line-height: 50px;
+}
+
+#footer .copy-right p {
+	font-family: var(--hf);
+	font-weight: 400;
+	font-size: 16px;
+}
+
+/*footer ends*/
+/*back-to top buttom*/
+
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 22px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    z-index: 9999999999999;
+    display: none;
+    border-radius: 50%;
+    background:#fcb100;
+    box-shadow: 1px 1px 8px 3px #5f14ce ;
+}
+
+.back-to-top:hover{    
+    background: #e23e38;
+}
+
+.back-to-top i {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #e23e38;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    font-size: 23px;
+      transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+
+.back-to-top:hover i{    
+    background: linear-gradient(#f131ce 0%,#b40991 100%);
+    box-shadow: 1px 2px 1px 3px #b40991;   
+}
+
+/*back-to top buttom*/
